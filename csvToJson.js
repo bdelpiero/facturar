@@ -1,10 +1,10 @@
 import fs from "fs"
 import path from "path"
 import csv from "csv-parser"
-import { json } from "stream/consumers"
 
-const csvFilePath = "input/books.csv" // Replace with the actual path to your CSV file
-const outputFolder = "output" // Replace with the desired output folder
+// These could be set with args passed to the script
+const csvFilePath = "input/books.csv"
+const outputFolder = "output"
 const maxBooksPerJson = 25
 
 function writeJsonToFile(jsonData, outputFolder, subdirectory, fileIndex) {
@@ -39,6 +39,8 @@ function parseCSVAndSplitToJson(csvFilePath, outputFolder, subdirectory) {
     .on("end", () => {
       const totalRecords = jsonData.length
       const totalJsonFiles = Math.ceil(totalRecords / maxBooksPerJson)
+
+      // Calculate the number of books per json so that we have an even distribution of records between files
       const booksPerJson = Math.min(maxBooksPerJson, Math.ceil(totalRecords / totalJsonFiles))
 
       console.log(`Total records: ${totalRecords}`)
@@ -47,11 +49,9 @@ function parseCSVAndSplitToJson(csvFilePath, outputFolder, subdirectory) {
 
       // Distribute data to JSON files
       let currentFileIndex = 1
-
       for (let index = 0; index < totalRecords; index++) {
         const isLastRecord = index === totalRecords - 1
         const shouldWriteToJson = index === currentFileIndex * booksPerJson - 1 || isLastRecord
-
         if (shouldWriteToJson) {
           writeJsonToFile(
             jsonData.slice((currentFileIndex - 1) * booksPerJson, currentFileIndex * booksPerJson),
@@ -71,12 +71,15 @@ function parseCSVAndSplitToJson(csvFilePath, outputFolder, subdirectory) {
     })
 }
 
-// Check if subdirectory argument is provided
-const subdirectory = process.argv[2] // The first argument
+function main() {
+  const subdirectory = process.argv[2]
 
-if (!subdirectory) {
-  console.error("Error: Please provide a subdirectory name as the first argument.")
-  process.exit(1)
+  if (!subdirectory) {
+    console.error("Error: Please provide a subdirectory name as the first argument.")
+    process.exit(1)
+  }
+
+  parseCSVAndSplitToJson(csvFilePath, outputFolder, subdirectory)
 }
 
-parseCSVAndSplitToJson(csvFilePath, outputFolder, subdirectory)
+main()
