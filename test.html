@@ -1,0 +1,980 @@
+<body cz-shortcut-listen="true">
+  <div
+    id="encabezado"
+    style="
+      background-image: url(imagenes/rcel_logo4small.png);
+      background-position: 560px -5px;
+      background-repeat: no-repeat;
+    "
+  >
+    <div id="encabezado_logo_afip">
+      <img
+        alt="AFIP"
+        srcset="imagenes/logo_afip_3x.png 3x, imagenes/logo_afip_2x.png 2x"
+        src="imagenes/logo_afip.png"
+      />
+    </div>
+    <div id="encabezado_salir"><a href="#" onclick="salirAplicacion('/rcel');">Salir</a></div>
+
+    <table id="encabezado_usuario_container">
+      <tbody>
+        <tr>
+          <td>
+            <table id="encabezado_usuario">
+              <tbody>
+                <tr>
+                  <th>Usuario<span>:</span></th>
+                  <td>20378440913 - DEL PIERO BRUNO</td>
+                </tr>
+                <tr>
+                  <th>Representando a<span>:</span></th>
+                  <td>20378440913 - DEL PIERO BRUNO</td>
+                </tr>
+                <tr>
+                  <th>Dependencia<span>:</span></th>
+                  <td>AGENCIA NRO 47</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="contenido">
+    <!-- Contenido (inicio) -->
+
+    <style type="text/css" media="all">
+      #advertencia_impresion {
+        display: none;
+      }
+    </style>
+    <style type="text/css" media="print">
+      #advertencia_impresion {
+        display: block;
+      }
+      #descripcion_moneda {
+        display: none;
+      }
+      #detalles_datos {
+        display: none;
+      }
+      #resumen_datos {
+        display: none;
+      }
+      #otros_datos {
+        display: none;
+      }
+    </style>
+    <script type="text/javascript">
+      var montoTopeReceptor = 191624
+      var htmlUnidadesMedida =
+        "<option value='1' style='padding-left:10px;'> kilogramos</option><option value='2' style='padding-left:10px;'> metros</option><option value='3' style='padding-left:10px;'> metros cuadrados</option><option value='4' style='padding-left:10px;'> metros cúbicos</option><option value='5' style='padding-left:10px;'> litros</option><option value='6' style='padding-left:10px;'> 1000 kWh</option><option value='7' style='padding-left:10px;'> unidades</option><option value='8' style='padding-left:10px;'> pares</option><option value='9' style='padding-left:10px;'> docenas</option><option value='10' style='padding-left:10px;'> quilates</option><option value='11' style='padding-left:10px;'> millares</option><option value='14' style='padding-left:10px;'> gramos</option><option value='15' style='padding-left:10px;'> milimetros</option><option value='16' style='padding-left:10px;'> mm cúbicos</option><option value='17' style='padding-left:10px;'> kilómetros</option><option value='18' style='padding-left:10px;'> hectolitros</option><option value='20' style='padding-left:10px;'> centímetros</option><option value='25' style='padding-left:10px;'> jgo. pqt. mazo naipes</option><option value='27' style='padding-left:10px;'> cm cúbicos</option><option value='29' style='padding-left:10px;'> toneladas</option><option value='30' style='padding-left:10px;'> dam cúbicos</option><option value='31' style='padding-left:10px;'> hm cúbicos</option><option value='32' style='padding-left:10px;'> km cúbicos</option><option value='33' style='padding-left:10px;'> microgramos</option><option value='34' style='padding-left:10px;'> nanogramos</option><option value='35' style='padding-left:10px;'> picogramos</option><option value='41' style='padding-left:10px;'> miligramos</option><option value='47' style='padding-left:10px;'> mililitros</option><option value='48' style='padding-left:10px;'> curie</option><option value='49' style='padding-left:10px;'> milicurie</option><option value='50' style='padding-left:10px;'> microcurie</option><option value='51' style='padding-left:10px;'> uiacthor</option><option value='52' style='padding-left:10px;'> muiacthor</option><option value='53' style='padding-left:10px;'> kg base</option><option value='54' style='padding-left:10px;'> gruesa</option><option value='61' style='padding-left:10px;'> kg bruto</option><option value='62' style='padding-left:10px;'> uiactant</option><option value='63' style='padding-left:10px;'> muiactant</option><option value='64' style='padding-left:10px;'> uiactig</option><option value='65' style='padding-left:10px;'> muiactig</option><option value='66' style='padding-left:10px;'> kg activo</option><option value='67' style='padding-left:10px;'> gramo activo</option><option value='68' style='padding-left:10px;'> gramo base</option><option value='96' style='padding-left:10px;'> packs</option><option value='98' style='padding-left:10px;'> otras unidades</option>"
+      var codBonosA = ""
+      var cuitRepresentada = "null"
+    </script>
+
+    <script type="text/javascript">
+      var simboloMoneda = "$"
+      var tipoCambio = 1
+    </script>
+    <script type="text/javascript" src="scripts/gen_com_datos_operacion.js?v=20180817"></script>
+
+    <script type="text/javascript" src="scripts/gen_com_datos_operacion_c.js?v=20200213"></script>
+    <script type="text/javascript" src="scripts/keep_alive.js?v=20160311"></script>
+    <div class="jig_titulo_con_subtitulo">RCEL - GENERACIÓN DE COMPROBANTES - FACTURA C</div>
+    <div class="jig_subtitulo">DATOS DE LA OPERACIÓN (PASO 3 DE 4)</div>
+    <div class="jig_paso_proceso">
+      <img src="imagenes/circulolleno.gif" /><img src="imagenes/circulolleno.gif" /><img
+        src="imagenes/circulolleno.gif"
+      /><img src="imagenes/circulovacio.gif" /><img src="imagenes/circulolleno.gif" />
+    </div>
+    <div id="advertencia_impresion">
+      <p><b>Por favor confirme los datos para generar una impresión, no imprima esta página.</b></p>
+    </div>
+    <form name="datosOperacionForm" action="genComResumenDatos.do" method="post" style="margin-top: 0px">
+      <input type="hidden" name="idIVAReceptor" id="idivareceptor" value="4" />
+      <input type="hidden" name="idTipoDocReceptor" id="idtipodocreceptor" value="80" />
+      <input type="hidden" name="nroDocReceptor" id="nrodocreceptor" value="30714760811" />
+      <input type="hidden" name="razonSocialReceptor" id="razonsocialreceptor" value="PUNTO DE ENCUENTRO S.A." />
+      <input
+        type="hidden"
+        name="domicilioReceptor"
+        id="domicilioreceptor"
+        value="De Mayo Av. 1110 - Capital Federal, Ciudad de Buenos Aires"
+      />
+      <input type="hidden" name="emailReceptor" id="email" value="" />
+
+      <div class="jig_borde">
+        <div class="jig_contenido" id="detalles_datos">
+          <table class="jig_formvertical" id="idoperacion">
+            <tbody>
+              <tr>
+                <th>Código</th>
+                <th>Producto/Servicio</th>
+
+                <th>Cant.</th>
+                <th style="padding: 0px">U. Medida</th>
+                <th>Prec. Unitario</th>
+                <th>% Bon.</th>
+                <th>Importe Bon.</th>
+                <th style="padding: 0px"></th>
+                <th style="padding: 0px"></th>
+                <th style="padding: 0px"></th>
+                <th>Subtotal</th>
+                <th>Eliminar</th>
+              </tr>
+              <tr>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloTexto"
+                    name="detalleCodigoArticulo"
+                    maxlength="4"
+                    style="width: 50px"
+                  /><input type="hidden" name="detalleNroLinea" />
+                </td>
+                <td style="padding: 0px">
+                  <textarea
+                    class="soloTexto"
+                    name="detalleDescripcion"
+                    id="detalle_descripcion1"
+                    style="width: 150px; overflow: auto; height: 19px"
+                    rows="1"
+                    onfocus="ajustarAnchoFocus(this);"
+                    onkeypress="return limitarLongitudTextArea(event,this,4000);"
+                    onkeyup="ajustarAnchoFocus(this);"
+                    onblur="ajustarAnchoBlur(this);"
+                  ></textarea>
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detalleCantidad"
+                    maxlength="19"
+                    id="detalle_cantidad1"
+                    onkeyup="calcularSubtotalDetalle(1);"
+                    onchange="calcularSubtotalDetalle(1);"
+                    value="1"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <select type="text" name="detalleMedida" id="detalle_medida1" style="width: 95px">
+                    <option value="7" style="color: #888">seleccionar...</option>
+                    <option value="1" style="padding-left: 10px">kilogramos</option>
+                    <option value="2" style="padding-left: 10px">metros</option>
+                    <option value="3" style="padding-left: 10px">metros cuadrados</option>
+                    <option value="4" style="padding-left: 10px">metros cúbicos</option>
+                    <option value="5" style="padding-left: 10px">litros</option>
+                    <option value="6" style="padding-left: 10px">1000 kWh</option>
+                    <option value="7" style="padding-left: 10px">unidades</option>
+                    <option value="8" style="padding-left: 10px">pares</option>
+                    <option value="9" style="padding-left: 10px">docenas</option>
+                    <option value="10" style="padding-left: 10px">quilates</option>
+                    <option value="11" style="padding-left: 10px">millares</option>
+                    <option value="14" style="padding-left: 10px">gramos</option>
+                    <option value="15" style="padding-left: 10px">milimetros</option>
+                    <option value="16" style="padding-left: 10px">mm cúbicos</option>
+                    <option value="17" style="padding-left: 10px">kilómetros</option>
+                    <option value="18" style="padding-left: 10px">hectolitros</option>
+                    <option value="20" style="padding-left: 10px">centímetros</option>
+                    <option value="25" style="padding-left: 10px">jgo. pqt. mazo naipes</option>
+                    <option value="27" style="padding-left: 10px">cm cúbicos</option>
+                    <option value="29" style="padding-left: 10px">toneladas</option>
+                    <option value="30" style="padding-left: 10px">dam cúbicos</option>
+                    <option value="31" style="padding-left: 10px">hm cúbicos</option>
+                    <option value="32" style="padding-left: 10px">km cúbicos</option>
+                    <option value="33" style="padding-left: 10px">microgramos</option>
+                    <option value="34" style="padding-left: 10px">nanogramos</option>
+                    <option value="35" style="padding-left: 10px">picogramos</option>
+                    <option value="41" style="padding-left: 10px">miligramos</option>
+                    <option value="47" style="padding-left: 10px">mililitros</option>
+                    <option value="48" style="padding-left: 10px">curie</option>
+                    <option value="49" style="padding-left: 10px">milicurie</option>
+                    <option value="50" style="padding-left: 10px">microcurie</option>
+                    <option value="51" style="padding-left: 10px">uiacthor</option>
+                    <option value="52" style="padding-left: 10px">muiacthor</option>
+                    <option value="53" style="padding-left: 10px">kg base</option>
+                    <option value="54" style="padding-left: 10px">gruesa</option>
+                    <option value="61" style="padding-left: 10px">kg bruto</option>
+                    <option value="62" style="padding-left: 10px">uiactant</option>
+                    <option value="63" style="padding-left: 10px">muiactant</option>
+                    <option value="64" style="padding-left: 10px">uiactig</option>
+                    <option value="65" style="padding-left: 10px">muiactig</option>
+                    <option value="66" style="padding-left: 10px">kg activo</option>
+                    <option value="67" style="padding-left: 10px">gramo activo</option>
+                    <option value="68" style="padding-left: 10px">gramo base</option>
+                    <option value="96" style="padding-left: 10px">packs</option>
+                    <option value="98" style="padding-left: 10px">otras unidades</option>
+                  </select>
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detallePrecio"
+                    maxlength="19"
+                    id="detalle_precio1"
+                    onkeyup="calcularSubtotalDetalle(1);"
+                    onchange="calcularSubtotalDetalle(1);"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detallePorcentajeBonificacion"
+                    maxlength="6"
+                    id="detalle_porcentaje1"
+                    value="0"
+                    onchange="calcularImporteBonificacionDetalle(1);"
+                    size="3"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detalleImporteBonificacion"
+                    maxlength="14"
+                    id="detalle_importe_bonificacion1"
+                    onchange="calcularPorcentajeBonificacionDetalle(1);"
+                  /><input
+                    type="hidden"
+                    name="detalleTipoBonificacion"
+                    id="detalle_tipo_bonificacion1"
+                    value="porcentaje"
+                  />
+                </td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px">
+                  <input type="text" name="detalleSubtotal2" id="detalle_subtotal21" readonly="readonly" />
+                </td>
+                <td style="text-align: center; padding: 0px">
+                  <span style="width: 100%; text-align: center"
+                    ><input
+                      type="button"
+                      name="Eliminar"
+                      value="X"
+                      style="width: 31px; text-align: center; color: #ff0000; font-size: 10px"
+                      onclick="borrarFilaDetalle(1);"
+                  /></span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloTexto"
+                    name="detalleCodigoArticulo"
+                    maxlength="4"
+                    style="width: 50px"
+                  /><input type="hidden" name="detalleNroLinea" />
+                </td>
+                <td style="padding: 0px">
+                  <textarea
+                    class="soloTexto"
+                    name="detalleDescripcion"
+                    id="detalle_descripcion2"
+                    style="width: 200px; overflow: auto; height: 19px"
+                    rows="1"
+                    onfocus="ajustarAnchoFocus(this);"
+                    onkeypress="return limitarLongitudTextArea(event,this,4000);"
+                    onkeyup="ajustarAnchoFocus(this);"
+                    onblur="ajustarAnchoBlur(this);"
+                  ></textarea>
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detalleCantidad"
+                    maxlength="19"
+                    id="detalle_cantidad2"
+                    onkeyup="calcularSubtotalDetalle(2);"
+                    onchange="calcularSubtotalDetalle(2);"
+                    value="1"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <select type="text" name="detalleMedida" id="detalle_medida2" style="width: 95px">
+                    <option value="7" style="color: #888">seleccionar...</option>
+                    <option value="1" style="padding-left: 10px">kilogramos</option>
+                    <option value="2" style="padding-left: 10px">metros</option>
+                    <option value="3" style="padding-left: 10px">metros cuadrados</option>
+                    <option value="4" style="padding-left: 10px">metros cúbicos</option>
+                    <option value="5" style="padding-left: 10px">litros</option>
+                    <option value="6" style="padding-left: 10px">1000 kWh</option>
+                    <option value="7" style="padding-left: 10px">unidades</option>
+                    <option value="8" style="padding-left: 10px">pares</option>
+                    <option value="9" style="padding-left: 10px">docenas</option>
+                    <option value="10" style="padding-left: 10px">quilates</option>
+                    <option value="11" style="padding-left: 10px">millares</option>
+                    <option value="14" style="padding-left: 10px">gramos</option>
+                    <option value="15" style="padding-left: 10px">milimetros</option>
+                    <option value="16" style="padding-left: 10px">mm cúbicos</option>
+                    <option value="17" style="padding-left: 10px">kilómetros</option>
+                    <option value="18" style="padding-left: 10px">hectolitros</option>
+                    <option value="20" style="padding-left: 10px">centímetros</option>
+                    <option value="25" style="padding-left: 10px">jgo. pqt. mazo naipes</option>
+                    <option value="27" style="padding-left: 10px">cm cúbicos</option>
+                    <option value="29" style="padding-left: 10px">toneladas</option>
+                    <option value="30" style="padding-left: 10px">dam cúbicos</option>
+                    <option value="31" style="padding-left: 10px">hm cúbicos</option>
+                    <option value="32" style="padding-left: 10px">km cúbicos</option>
+                    <option value="33" style="padding-left: 10px">microgramos</option>
+                    <option value="34" style="padding-left: 10px">nanogramos</option>
+                    <option value="35" style="padding-left: 10px">picogramos</option>
+                    <option value="41" style="padding-left: 10px">miligramos</option>
+                    <option value="47" style="padding-left: 10px">mililitros</option>
+                    <option value="48" style="padding-left: 10px">curie</option>
+                    <option value="49" style="padding-left: 10px">milicurie</option>
+                    <option value="50" style="padding-left: 10px">microcurie</option>
+                    <option value="51" style="padding-left: 10px">uiacthor</option>
+                    <option value="52" style="padding-left: 10px">muiacthor</option>
+                    <option value="53" style="padding-left: 10px">kg base</option>
+                    <option value="54" style="padding-left: 10px">gruesa</option>
+                    <option value="61" style="padding-left: 10px">kg bruto</option>
+                    <option value="62" style="padding-left: 10px">uiactant</option>
+                    <option value="63" style="padding-left: 10px">muiactant</option>
+                    <option value="64" style="padding-left: 10px">uiactig</option>
+                    <option value="65" style="padding-left: 10px">muiactig</option>
+                    <option value="66" style="padding-left: 10px">kg activo</option>
+                    <option value="67" style="padding-left: 10px">gramo activo</option>
+                    <option value="68" style="padding-left: 10px">gramo base</option>
+                    <option value="96" style="padding-left: 10px">packs</option>
+                    <option value="98" style="padding-left: 10px">otras unidades</option>
+                  </select>
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detallePrecio"
+                    maxlength="19"
+                    id="detalle_precio2"
+                    onkeyup="calcularSubtotalDetalle(2);"
+                    onchange="calcularSubtotalDetalle(2);"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detallePorcentajeBonificacion"
+                    maxlength="6"
+                    id="detalle_porcentaje2"
+                    value="0"
+                    onchange="calcularImporteBonificacionDetalle(2);"
+                    size="3"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detalleImporteBonificacion"
+                    maxlength="14"
+                    id="detalle_importe_bonificacion2"
+                    onchange="calcularPorcentajeBonificacionDetalle(2);"
+                  /><input
+                    type="hidden"
+                    name="detalleTipoBonificacion"
+                    id="detalle_tipo_bonificacion2"
+                    value="porcentaje"
+                  />
+                </td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px">
+                  <input type="text" name="detalleSubtotal2" id="detalle_subtotal22" readonly="readonly" />
+                </td>
+                <td style="text-align: center; padding: 0px">
+                  <span style="width: 100%; text-align: center"
+                    ><input
+                      type="button"
+                      name="Eliminar"
+                      value="X"
+                      style="width: 31px; text-align: center; color: #ff0000; font-size: 10px"
+                      onclick="borrarFilaDetalle(2);"
+                  /></span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloTexto"
+                    name="detalleCodigoArticulo"
+                    maxlength="4"
+                    style="width: 50px"
+                  /><input type="hidden" name="detalleNroLinea" />
+                </td>
+                <td style="padding: 0px">
+                  <textarea
+                    class="soloTexto"
+                    name="detalleDescripcion"
+                    id="detalle_descripcion3"
+                    style="width: 200px; overflow: auto; height: 19px"
+                    rows="1"
+                    onfocus="ajustarAnchoFocus(this);"
+                    onkeypress="return limitarLongitudTextArea(event,this,4000);"
+                    onkeyup="ajustarAnchoFocus(this);"
+                    onblur="ajustarAnchoBlur(this);"
+                  ></textarea>
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detalleCantidad"
+                    maxlength="19"
+                    id="detalle_cantidad3"
+                    onkeyup="calcularSubtotalDetalle(3);"
+                    onchange="calcularSubtotalDetalle(3);"
+                    value="1"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <select type="text" name="detalleMedida" id="detalle_medida3" style="width: 95px">
+                    <option value="7" style="color: #888">seleccionar...</option>
+                    <option value="1" style="padding-left: 10px">kilogramos</option>
+                    <option value="2" style="padding-left: 10px">metros</option>
+                    <option value="3" style="padding-left: 10px">metros cuadrados</option>
+                    <option value="4" style="padding-left: 10px">metros cúbicos</option>
+                    <option value="5" style="padding-left: 10px">litros</option>
+                    <option value="6" style="padding-left: 10px">1000 kWh</option>
+                    <option value="7" style="padding-left: 10px">unidades</option>
+                    <option value="8" style="padding-left: 10px">pares</option>
+                    <option value="9" style="padding-left: 10px">docenas</option>
+                    <option value="10" style="padding-left: 10px">quilates</option>
+                    <option value="11" style="padding-left: 10px">millares</option>
+                    <option value="14" style="padding-left: 10px">gramos</option>
+                    <option value="15" style="padding-left: 10px">milimetros</option>
+                    <option value="16" style="padding-left: 10px">mm cúbicos</option>
+                    <option value="17" style="padding-left: 10px">kilómetros</option>
+                    <option value="18" style="padding-left: 10px">hectolitros</option>
+                    <option value="20" style="padding-left: 10px">centímetros</option>
+                    <option value="25" style="padding-left: 10px">jgo. pqt. mazo naipes</option>
+                    <option value="27" style="padding-left: 10px">cm cúbicos</option>
+                    <option value="29" style="padding-left: 10px">toneladas</option>
+                    <option value="30" style="padding-left: 10px">dam cúbicos</option>
+                    <option value="31" style="padding-left: 10px">hm cúbicos</option>
+                    <option value="32" style="padding-left: 10px">km cúbicos</option>
+                    <option value="33" style="padding-left: 10px">microgramos</option>
+                    <option value="34" style="padding-left: 10px">nanogramos</option>
+                    <option value="35" style="padding-left: 10px">picogramos</option>
+                    <option value="41" style="padding-left: 10px">miligramos</option>
+                    <option value="47" style="padding-left: 10px">mililitros</option>
+                    <option value="48" style="padding-left: 10px">curie</option>
+                    <option value="49" style="padding-left: 10px">milicurie</option>
+                    <option value="50" style="padding-left: 10px">microcurie</option>
+                    <option value="51" style="padding-left: 10px">uiacthor</option>
+                    <option value="52" style="padding-left: 10px">muiacthor</option>
+                    <option value="53" style="padding-left: 10px">kg base</option>
+                    <option value="54" style="padding-left: 10px">gruesa</option>
+                    <option value="61" style="padding-left: 10px">kg bruto</option>
+                    <option value="62" style="padding-left: 10px">uiactant</option>
+                    <option value="63" style="padding-left: 10px">muiactant</option>
+                    <option value="64" style="padding-left: 10px">uiactig</option>
+                    <option value="65" style="padding-left: 10px">muiactig</option>
+                    <option value="66" style="padding-left: 10px">kg activo</option>
+                    <option value="67" style="padding-left: 10px">gramo activo</option>
+                    <option value="68" style="padding-left: 10px">gramo base</option>
+                    <option value="96" style="padding-left: 10px">packs</option>
+                    <option value="98" style="padding-left: 10px">otras unidades</option>
+                  </select>
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detallePrecio"
+                    maxlength="19"
+                    id="detalle_precio3"
+                    onkeyup="calcularSubtotalDetalle(3);"
+                    onchange="calcularSubtotalDetalle(3);"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detallePorcentajeBonificacion"
+                    maxlength="6"
+                    id="detalle_porcentaje3"
+                    value="0"
+                    onchange="calcularImporteBonificacionDetalle(3);"
+                    size="3"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detalleImporteBonificacion"
+                    maxlength="14"
+                    id="detalle_importe_bonificacion3"
+                    onchange="calcularPorcentajeBonificacionDetalle(3);"
+                  /><input
+                    type="hidden"
+                    name="detalleTipoBonificacion"
+                    id="detalle_tipo_bonificacion3"
+                    value="porcentaje"
+                  />
+                </td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px">
+                  <input type="text" name="detalleSubtotal2" id="detalle_subtotal23" readonly="readonly" />
+                </td>
+                <td style="text-align: center; padding: 0px">
+                  <span style="width: 100%; text-align: center"
+                    ><input
+                      type="button"
+                      name="Eliminar"
+                      value="X"
+                      style="width: 31px; text-align: center; color: #ff0000; font-size: 10px"
+                      onclick="borrarFilaDetalle(3);"
+                  /></span>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloTexto"
+                    name="detalleCodigoArticulo"
+                    maxlength="4"
+                    style="width: 50px"
+                  /><input type="hidden" name="detalleNroLinea" />
+                </td>
+                <td style="padding: 0px">
+                  <textarea
+                    class="soloTexto"
+                    name="detalleDescripcion"
+                    id="detalle_descripcion4"
+                    style="width: 200px; overflow: auto; height: 19px"
+                    rows="1"
+                    onfocus="ajustarAnchoFocus(this);"
+                    onkeypress="return limitarLongitudTextArea(event,this,4000);"
+                    onkeyup="ajustarAnchoFocus(this);"
+                    onblur="ajustarAnchoBlur(this);"
+                  ></textarea>
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detalleCantidad"
+                    maxlength="19"
+                    id="detalle_cantidad4"
+                    onkeyup="calcularSubtotalDetalle(4);"
+                    onchange="calcularSubtotalDetalle(4);"
+                    value="1"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <select type="text" name="detalleMedida" id="detalle_medida4" style="width: 95px">
+                    <option value="7" style="color: #888">seleccionar...</option>
+                    <option value="1" style="padding-left: 10px">kilogramos</option>
+                    <option value="2" style="padding-left: 10px">metros</option>
+                    <option value="3" style="padding-left: 10px">metros cuadrados</option>
+                    <option value="4" style="padding-left: 10px">metros cúbicos</option>
+                    <option value="5" style="padding-left: 10px">litros</option>
+                    <option value="6" style="padding-left: 10px">1000 kWh</option>
+                    <option value="7" style="padding-left: 10px">unidades</option>
+                    <option value="8" style="padding-left: 10px">pares</option>
+                    <option value="9" style="padding-left: 10px">docenas</option>
+                    <option value="10" style="padding-left: 10px">quilates</option>
+                    <option value="11" style="padding-left: 10px">millares</option>
+                    <option value="14" style="padding-left: 10px">gramos</option>
+                    <option value="15" style="padding-left: 10px">milimetros</option>
+                    <option value="16" style="padding-left: 10px">mm cúbicos</option>
+                    <option value="17" style="padding-left: 10px">kilómetros</option>
+                    <option value="18" style="padding-left: 10px">hectolitros</option>
+                    <option value="20" style="padding-left: 10px">centímetros</option>
+                    <option value="25" style="padding-left: 10px">jgo. pqt. mazo naipes</option>
+                    <option value="27" style="padding-left: 10px">cm cúbicos</option>
+                    <option value="29" style="padding-left: 10px">toneladas</option>
+                    <option value="30" style="padding-left: 10px">dam cúbicos</option>
+                    <option value="31" style="padding-left: 10px">hm cúbicos</option>
+                    <option value="32" style="padding-left: 10px">km cúbicos</option>
+                    <option value="33" style="padding-left: 10px">microgramos</option>
+                    <option value="34" style="padding-left: 10px">nanogramos</option>
+                    <option value="35" style="padding-left: 10px">picogramos</option>
+                    <option value="41" style="padding-left: 10px">miligramos</option>
+                    <option value="47" style="padding-left: 10px">mililitros</option>
+                    <option value="48" style="padding-left: 10px">curie</option>
+                    <option value="49" style="padding-left: 10px">milicurie</option>
+                    <option value="50" style="padding-left: 10px">microcurie</option>
+                    <option value="51" style="padding-left: 10px">uiacthor</option>
+                    <option value="52" style="padding-left: 10px">muiacthor</option>
+                    <option value="53" style="padding-left: 10px">kg base</option>
+                    <option value="54" style="padding-left: 10px">gruesa</option>
+                    <option value="61" style="padding-left: 10px">kg bruto</option>
+                    <option value="62" style="padding-left: 10px">uiactant</option>
+                    <option value="63" style="padding-left: 10px">muiactant</option>
+                    <option value="64" style="padding-left: 10px">uiactig</option>
+                    <option value="65" style="padding-left: 10px">muiactig</option>
+                    <option value="66" style="padding-left: 10px">kg activo</option>
+                    <option value="67" style="padding-left: 10px">gramo activo</option>
+                    <option value="68" style="padding-left: 10px">gramo base</option>
+                    <option value="96" style="padding-left: 10px">packs</option>
+                    <option value="98" style="padding-left: 10px">otras unidades</option>
+                  </select>
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detallePrecio"
+                    maxlength="19"
+                    id="detalle_precio4"
+                    onkeyup="calcularSubtotalDetalle(4);"
+                    onchange="calcularSubtotalDetalle(4);"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detallePorcentajeBonificacion"
+                    maxlength="6"
+                    id="detalle_porcentaje4"
+                    value="0"
+                    onchange="calcularImporteBonificacionDetalle(4);"
+                    size="3"
+                  />
+                </td>
+                <td style="padding: 0px">
+                  <input
+                    type="text"
+                    class="soloNumerosConDecimales"
+                    name="detalleImporteBonificacion"
+                    maxlength="14"
+                    id="detalle_importe_bonificacion4"
+                    onchange="calcularPorcentajeBonificacionDetalle(4);"
+                  /><input
+                    type="hidden"
+                    name="detalleTipoBonificacion"
+                    id="detalle_tipo_bonificacion4"
+                    value="porcentaje"
+                  />
+                </td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px"><input type="hidden" /></td>
+                <td style="padding: 0px">
+                  <input type="text" name="detalleSubtotal2" id="detalle_subtotal24" readonly="readonly" />
+                </td>
+                <td style="text-align: center; padding: 0px">
+                  <span style="width: 100%; text-align: center"
+                    ><input
+                      type="button"
+                      name="Eliminar"
+                      value="X"
+                      style="width: 31px; text-align: center; color: #ff0000; font-size: 10px"
+                      onclick="borrarFilaDetalle(4);"
+                  /></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <input
+            type="button"
+            value="Agregar línea descripción"
+            style="width: 190px"
+            onclick="ajaxMantenerSesionActiva();insertarFilaDetalle();"
+          />
+
+          <br />
+
+          <br />
+        </div>
+      </div>
+      <div class="jig_fin_de_pagina"><!-- IE falla sin este comentario --></div>
+      <div class="jig_borde">
+        <div class="jig_contenido" id="resumen_datos">
+          <table style="width: 100%">
+            <tbody>
+              <tr>
+                <td>
+                  <table class="jig_formsmall" id="impuestos">
+                    <tbody>
+                      <tr>
+                        <td colspan="3">
+                          <span style="font-size: 10px; font-weight: bold; display: inline" id="labelotrosimpuestos"
+                            >Otros Tributos:</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Descripción</td>
+                        <td style="padding: 0px">Detalle</td>
+                        <td style="padding: 0px">Base<br />Imponible</td>
+                        <td style="padding: 0px; text-align: center">Alícuota<br />%</td>
+                        <td style="padding-left: 12px">Importe</td>
+                        <td style="padding: 0px"></td>
+                      </tr>
+                      <tr>
+                        <td colspan="6">
+                          <span
+                            style="font-size: 10px; font-weight: bold; display: none; padding: 0px"
+                            id="labelotrosimpuestos"
+                            >Otros:</span
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="text-align: right; padding: 0px">
+                          <input
+                            type="text"
+                            class="soloTexto"
+                            name="impuestoDescripcion"
+                            id="impuesto_descripcion1"
+                            style="width: 130px"
+                            maxlength="40"
+                          /><input type="hidden" name="impuestoCodigo" id="impuesto_codigo1" value="0" />
+                        </td>
+                        <td style="padding: 0px">
+                          <input
+                            type="text"
+                            class="soloTexto"
+                            name="impuestoDetalle"
+                            id="impuesto_detalle1"
+                            onkeyup="calcularTotalImpuestos();"
+                            style="width: 100px"
+                            maxlength="25"
+                          />
+                        </td>
+                        <td style="padding: 0px">
+                          <input
+                            type="text"
+                            class="soloNumerosConDecimales"
+                            name="impuestoBaseImponible"
+                            id="impuesto_baseimponible1"
+                            onkeyup="calcularImporteFilaImpuestos(1);"
+                            onchange="calcularImporteFilaImpuestos(1);"
+                            style="width: 70px"
+                          />
+                        </td>
+                        <td style="padding: 0px">
+                          <input
+                            type="text"
+                            class="soloNumerosConDecimales"
+                            name="impuestoAlicuota"
+                            id="impuesto_alicuota1"
+                            onkeyup="calcularImporteFilaImpuestos(1);"
+                            onchange="calcularImporteFilaImpuestos(1);"
+                            style="width: 45px"
+                          />
+                        </td>
+                        <td style="padding: 0px">
+                          <span>$</span>&nbsp;<input
+                            type="text"
+                            class="soloNumerosConDecimales"
+                            name="impuestoMonto"
+                            onkeyup="calcularTotalImpuestos();"
+                            id="impuesto_monto1"
+                            onchange="limpiarBIyAFilaImpuestos(1);"
+                            style="width: 70px"
+                          />
+                        </td>
+                        <td style="padding: 0px">
+                          <span style="width: 100%; text-align: center"
+                            ><input
+                              type="button"
+                              name="Eliminar"
+                              id="ef"
+                              value="X"
+                              style="width: 31px; text-align: center; color: #ff0000; font-size: 10px"
+                              onclick="borrarFilaImpuesto(1);"
+                          /></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th colspan="4" style="padding: 0px"><b>Importe Otros Tributos:</b></th>
+                        <td nowrap="nowrap" style="padding: 0px">
+                          <span>$</span>
+                          <input
+                            type="text"
+                            name="impTotalImpuestos1"
+                            id="imptotalimpuestos1"
+                            class="jig_readonly"
+                            readonly="readonly"
+                            style="width: 70px; font-weight: bold; text-align: right"
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2"></td>
+                        <td colspan="3" align="center">
+                          <br /><input
+                            type="button"
+                            value="Agregar otro Tributo"
+                            name="agregarImp"
+                            onclick="document.getElementById('labelotrosimpuestos').style.display = 'inline';insertarFilaImpuesto();"
+                            style="text-align: center; width: 190px"
+                          />
+                        </td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+                <td style="vertical-align: top; height: 100%; float: right">
+                  <table class="jig_formsmall" style="height: 100%">
+                    <tbody>
+                      <tr>
+                        <td style="vertical-align: top">
+                          <table class="jig_formsmall" id="importes" style="float: right">
+                            <tbody>
+                              <tr>
+                                <th colspan="2">Subtotal:</th>
+                                <td nowrap="nowrap">
+                                  <span>$</span>
+                                  <input
+                                    type="text"
+                                    name="subtotal3"
+                                    id="subtotal3"
+                                    class="jig_readonly"
+                                    readonly="readonly"
+                                    style="width: 80px; text-align: right"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table class="jig_formsmall" style="float: right">
+                            <tbody>
+                              <tr>
+                                <th><b>Importe Otros Tributos: </b></th>
+                                <td nowrap="nowrap">
+                                  <span>$</span>
+                                  <input
+                                    type="text"
+                                    name="impTotalImpuestos2"
+                                    id="imptotalimpuestos2"
+                                    class="jig_readonly"
+                                    readonly="readonly"
+                                    style="width: 80px; font-weight: bold; text-align: right"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table class="jig_formsmall" style="float: right">
+                            <tbody>
+                              <tr>
+                                <th><b>Importe Total: </b></th>
+                                <td nowrap="nowrap">
+                                  <span>$</span>
+                                  <input
+                                    type="text"
+                                    name="impTotal"
+                                    id="imptotal"
+                                    class="jig_readonly"
+                                    readonly="readonly"
+                                    style="width: 80px; font-weight: bold; text-align: right"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="jig_fin_de_pagina"><!-- IE falla sin este comentario --></div>
+
+      <div class="jig_borde">
+        <div class="jig_contenido" id="otros_datos">
+          <table class="jig_formsmall" style="margin-left: auto; margin-right: auto">
+            <tbody>
+              <tr>
+                <td style="text-align: right">Precisión Campo Cantidad</td>
+                <td>
+                  <select style="width: 90px" name="numDecimalesCantidad" id="numdecimalescantidad">
+                    <option value="2">&nbsp;2 decimales</option>
+                    <option value="4">&nbsp;4 decimales</option>
+                    <option value="6">&nbsp;6 decimales</option>
+                  </select>
+                </td>
+                <td style="text-align: right">Campo Precio Unitario</td>
+                <td>
+                  <select style="width: 90px" name="numDecimalesPrecioUnit" id="numdecimalespreciounit">
+                    <option value="2">&nbsp;2 decimales</option>
+                    <option value="4">&nbsp;4 decimales</option>
+                    <option value="6">&nbsp;6 decimales</option>
+                  </select>
+                </td>
+                <td style="width: 100px">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="jig_fin_de_pagina"><!-- IE falla sin este comentario --></div>
+
+      <br />
+      <input type="button" value="< Volver" onclick="parent.history.back();" />&nbsp;<input
+        type="button"
+        value="Continuar >"
+        onclick="validarCampos();"
+      />
+      <br /><br />
+    </form>
+    <table style="margin-left: auto; margin-right: auto">
+      <tbody>
+        <tr>
+          <td>
+            <div class="jig_separador_botones"><!-- IE falla sin este comentario --></div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" value="Menú Principal" onclick="parent.location.href='menu_ppal.jsp'" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <script type="text/javascript">
+      insertarFilaDetalle()
+
+      document.getElementById("labelotrosimpuestos").style.display = "inline"
+      insertarFilaImpuesto()
+    </script>
+    <!-- Contenido (fin) -->
+  </div>
+  <br />
+
+  <div id="pie">
+    <table>
+      <tbody>
+        <tr>
+          <td><b>Viernes, 23 de febrero de 2024 v4.4.0</b></td>
+          <td style="text-align: right">Autenticado por: <b>ADMINISTRACION FEDERAL DE INGRESOS PUBLICOS</b></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>

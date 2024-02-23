@@ -1,0 +1,15 @@
+{
+  "name": "facturacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "productsCsvToJsonFiles.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
